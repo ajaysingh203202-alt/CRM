@@ -12,7 +12,7 @@ function Login() {
     e.preventDefault();
     const admin = { email, password };
     // console.log(admin);
-    const res = await axios.post("http://localhost:5000/api/admin/log", admin);
+    const res = await axios.post("https://crm-1-ngxy.onrender.com/api/admin/log", admin);
 
     // console.log(res);
     if (res.data.msg == "success") {
