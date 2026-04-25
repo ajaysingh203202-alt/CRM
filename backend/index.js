@@ -10,8 +10,9 @@ const assignRouter = require('./Routes/assignRouter');
 const followupRouter = require('./Routes/followupRouter');
 const otpRouter = require('./Routes/otpRouter');
 const dotenv = require('dotenv')
-const app= express();
 dotenv.config();
+const app= express();
+
 const port = process.env.PORT;
 mongoose.connect(process.env.URI)
 .then(()=>{
