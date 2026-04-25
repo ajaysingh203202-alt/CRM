@@ -11,9 +11,9 @@ const followupRouter = require('./Routes/followupRouter');
 const otpRouter = require('./Routes/otpRouter');
 const dotenv = require('dotenv')
 const app= express();
+dotenv.config();
 const port = process.env.PORT;
-mongoose.connect(processs.env.URI)
-mongoose.connect('mongodb://localhost:27017/ajay')
+mongoose.connect(process.env.URI)
 .then(()=>{
     console.log("DB connected");
 })
